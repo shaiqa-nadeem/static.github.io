@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        PortFolio
+    </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: aliceblue;
+            color: rgb(169, 189, 207);
+            font-size: 20px;
+            
+
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(34, 53, 53);
+            
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav ul li a:hover{
+            color: aquamarine;
+        }
+        .leftsection{
+            font-size: 3rem;
+            margin: 70px;
+            display: flex;
+            color: rgb(202, 117, 14);
+        }
+        
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+        .firstsection > div{
+            width: 30%;
+            
+        }
+        .rightsection img{
+            
+            width: 100%;
+        }
+        .secondsection{
+            max-width: 90vw;
+            margin: auto;
+            height: 50vh;
+        }
+        .secondsection h1{
+            color: rgb(17, 80, 80);
+            font-size: 2.5rem;
+        }
+        .secondsection h3{
+            color: rgb(17, 80, 80);
+        }
+                
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                My Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="home.html">   Home</a>
+                    </li>
+                    <li>
+                        <a href="home.html">About</a>
+                    </li>
+                    <li>
+                        <a href="home.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                
+                <div>My name is Shaiqa.  <span id="element"></span></div>
+                
+            </div>
+            <div class="rightsection">
+                <img src="./wp-1.jpg">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <span>What I have done so far</span>
+            <h1>Work Experience</h1>
+            <hr>
+            <p style="color: rgb(72, 107, 95);">I completed BSSE in 2018 from CUI, Wah campus. I worked as a computer lecturer at Sir Syed Degree Colege, Wah Cantt.
+                For more than two years I taught computer science to students of Bsc and Fsc. Now I want to revert to frontend web development.
+                <p style="color: rgb(72, 107, 95);">Currently, I am in 4th semester of MS in information security from RISE, Islamabad.</p> 
+            </p>
+            <h3>Contact Details</h3>
+            <p style="color: rgb(78, 60, 60);">mobile no: 03405443314</p>
+            <p style="color: rgb(78, 60, 60);">email address: shaiqanadem@gmail.com </p>
+            <p style="color:rgb(78, 60, 60);">Present Address: Hostelite in Islamabad</p>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['I am<i> a Software</i> Engineer.', 'I am a Frontend Web Developer.','&amp; I have knowledge of Frontend languages.'],
+          typeSpeed: 50,
+        });
+      </script>
+
+</body>
+
+</html>
